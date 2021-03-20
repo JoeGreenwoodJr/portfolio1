@@ -73,3 +73,9 @@ a:visited {
     font-size: 60px;
     background-image: radial-gradient(rgb(255, 123, 0), yellow);
 }
+
+.about-me-bar p {
+    text-align: right;
+    
+    font-size: 30px;
+}
