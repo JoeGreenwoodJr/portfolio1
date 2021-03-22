@@ -77,13 +77,12 @@ a:visited {
 }
 
 /* Sets text inside column1 to the right */
-.column1, .column3 {
-    font-size: 35px;
-    text-align: right;
-}
+
 
 /* Sets sizing for the first column*/
-.column1, .column3 {
+.column1, .column3, .column5 {
+    font-size: 35px;
+    text-align: right;
     margin-bottom: 20px;
     border-right: 5px solid rgb(132, 223, 29);
     float: left;
@@ -109,6 +108,19 @@ a:visited {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+/* Sets flexbox and font size for column 6 */
+.column6 {
+    font-size: 35px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Ensures proper centering of text */
+.column6 li {
+    padding-top: 50px;
 }
 
 /* Ensures text-block can be floated over images */
@@ -147,14 +159,14 @@ a:visited {
 
 /* Reduces font-size for smaller screens */
 @media screen and (max-width: 768px) {
-    header .about-me-row, .column1, .column2 p, .column3 {
+    header .about-me-row, .column1, .column2 p, .column3, .column5, .column6 {
         font-size: 120%;
     }
 }
 
 /* Reduces font-size further for mobile phones */
 @media screen and (max-width: 400px) {
-    .column1, .column3 {
+    .column1, .column3 .column5 .column6 {
         font-size: 60%;
     }
 }
