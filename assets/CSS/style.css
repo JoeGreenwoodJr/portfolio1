@@ -143,6 +143,13 @@ a:visited {
 }
 
 .office-buildings, .circles, .swirls, .triangles {
-    margin-top: 15px;
-    margin-left: 50px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+@media (min-width: 768) {
+    .circuit-board {
+        max-width: 300px;
+        max-height: 300px;
+    }
 }
